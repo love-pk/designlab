@@ -17,7 +17,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     url: "/",
     templateUrl: "views/template.html",
     controller: 'HomeCtrl'
-  });
+  })
+  .state('designlab', {
+  url: "/designlab",
+  templateUrl: "views/template.html",
+  controller: 'DesignLabCtrl'
+});
   $urlRouterProvider.otherwise("/");
   $locationProvider.html5Mode(isproduction);
 });

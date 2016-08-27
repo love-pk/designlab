@@ -14,7 +14,7 @@ $brand-danger:  #fc483f !default;
 $brand-info:    #000072 !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
-  padding-top: 70px;
+  // font-family: 'Lato';
 }
 img.loading {
   text-align: center;
@@ -53,4 +53,185 @@ a, .btn {
 }
 //bootstrap forms
 /* Start writing sass here */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    /* -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5); */
+    /* box-shadow: inset 0 0 100px rgba(0,0,0,.5); */
+}
+.main {
+    background-image: url("../img/head-back.jpg");
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    height: 1200px;
+    background-position: 100% 100%;
+    .main-head{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      h1{
+        font-size: 53px;
+        color: #fff;
+      }
+      p{
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 29px;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+}
+
+
+.cont-about{
+    border: 1px solid #000;
+    width: 80%;
+    padding: 53px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    // h2{
+    //     background-color: #fff;
+    //     width: 42%;
+    //     text-align: center;
+    //     float: none;
+    //     top: -39px;
+    //     position: absolute;
+    //     margin: 10px 0 20px 0;
+    //     left: 257px;
+    //     padding: 18px;
+    //     font-size: 20px;
+    //     font-weight: 700;
+    //     transform: scaleY(1.002);
+    // }
+}
+
+.services{
+  background-image: url("../img/services-back.png");
+  background-size: cover;
+  height: 336px;
+  position: relative;
+  background-position: 100% 100%;
+    .cont-services{
+      border: 1px solid #fff;
+      width: 80%;
+      padding: 53px;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      h2, p{
+        color: #fff;
+      }
+    }
+}
+
+.what-we-do{
+    border: 1px solid #000;
+    width: 80%;
+    padding: 53px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .design{
+      padding: 50px;
+      h4{
+        padding: 15px;
+      }
+      p{
+        padding: 0 50px;
+      }
+    }
+}
+
+
+.topworkz,.joint,.market,.worktop,.worklabel,.kyiv{
+    border: 5px solid #fff;
+    background-image: url("../img/joint.jpg");
+    height: 175px;
+    background-size: cover;
+    position: relative;
+    h5{
+      position: absolute;
+      top: 68%;
+      left: 8%;
+      font-size: 22px;
+      color: #fff;
+    }
+}
+.topworkz{
+    background-image: url("../img/topworkz.jpg");
+}
+.market{
+    background-image: url("../img/market.jpg");
+}
+.worktop{
+  background-image: url("../img/worktop.jpg");
+}
+.worklabel{
+  background-image: url("../img/label.jpg");
+}
+.kyiv{
+  background-image: url("../img/kyiv.jpg");
+}
+
+h2{
+    background-color: #069;
+    width: 42%;
+    text-align: center;
+    float: none;
+    top: -39px;
+    position: absolute;
+    margin: 10px 0 20px 0;
+    left: 257px;
+    padding: 18px;
+    font-size: 30px;
+    font-weight: 700;
+    /* transform: scaleY(1.002); */
+}
+p{
+    color: #3c3c3c;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 27px 0 27px;
+}
+.lab-contact{
+  border: 1px solid #000;
+  width: 80%;
+  padding: 53px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .contact-btn{
+      width: 30%;
+      padding: 13px;
+      background-color: #3c3c3c;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      // @include button-variant($grey, transparent, $grey);
+  }
+}
+
+
 @import "fancybox-override";
